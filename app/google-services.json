@@ -1,0 +1,44 @@
+{
+  "project_info": {
+    "project_number": "787304874376",
+    "firebase_url": "https://mascotaapp-fd8e4.firebaseio.com",
+    "project_id": "mascotaapp-fd8e4",
+    "storage_bucket": "mascotaapp-fd8e4.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:787304874376:android:2f9d675961a05b45",
+        "android_client_info": {
+          "package_name": "com.udem.proyecto.mascotaapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "787304874376-s9iqhnqdicoogliloqairuc5ttno0v6u.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.udem.proyecto.mascotaapp",
+            "certificate_hash": "a32a7b6f9eb4ed15845a77ec5b497fbbdfb6d953"
+          }
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyARo_KBv4Crg0auddgxoOYrK33tXY_i3V8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "787304874376-drooc5u0vvtkqh96qrqs42o9j0f8trji.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

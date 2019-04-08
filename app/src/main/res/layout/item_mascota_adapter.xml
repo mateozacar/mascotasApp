@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="15dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@drawable/border_layout_adapter">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/ivBorrarMascota"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/ic_delete_item_adapter"/>
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/ivImagenMascota"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_margin="10dp"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/ic_launcher_background"/>
+
+        <EditText
+            android:id="@+id/etNombreMascota_adapter"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nombre mascota"/>
+
+        <EditText
+            android:id="@+id/etTipoMascota_adapter"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Tipo mascota"/>
+
+        <EditText
+            android:id="@+id/etDescripcionMascota_adapter"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Descripcion"/>
+
+        <Button
+            android:id="@+id/btnAguardarMascota"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Guardar"/>
+
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>
