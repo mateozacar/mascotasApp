@@ -78,6 +78,7 @@ public class MascotaAdapter extends RecyclerView.Adapter<MascotaAdapter.MascotaA
         public MascotaAdapterViewHolder(@NonNull View itemView) {
             super(itemView);
             imagenMascota = itemView.findViewById(R.id.ivImagenMascota);
+            imagenMascota.setImageResource(R.drawable.icon_animal);
             nombreMascota = itemView.findViewById(R.id.etNombreMascota_adapter);
             descripcionMascota = itemView.findViewById(R.id.etDescripcionMascota_adapter);
             tipoMascota = itemView.findViewById(R.id.etTipoMascota_adapter);
