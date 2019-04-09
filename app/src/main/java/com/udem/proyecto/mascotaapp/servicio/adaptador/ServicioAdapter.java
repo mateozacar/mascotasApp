@@ -63,17 +63,22 @@ public class ServicioAdapter extends RecyclerView.Adapter<ServicioAdapter.Servic
         public EditText nombreServicio;
         public EditText descripcion;
         public EditText tipoServicio;
+        public RecyclerView rvMascotas;
 
         public ImageView ivBorrarMascota;
-        public Button btnGuardarMascota;
+        public Button btnGuardarServicio;
 
         public ServicioAdapterViewHolder(@NonNull View itemView) {
             super(itemView);
             nombreServicio = itemView.findViewById(R.id.etNombreServicio_adapter);
             descripcion = itemView.findViewById(R.id.etDescripcionServicio_adapter);
             tipoServicio = itemView.findViewById(R.id.etTipoServicio_adapter);
-            btnGuardarMascota = itemView.findViewById(R.id.btnAguardarServicio);
+            btnGuardarServicio = itemView.findViewById(R.id.btnAguardarServicio);
+            rvMascotas = itemView.findViewById(R.id.rvNombreMascotas);
 
+
+
+            btnGuardarServicio.setOnClickListener(this);
 
 
         }
@@ -81,8 +86,8 @@ public class ServicioAdapter extends RecyclerView.Adapter<ServicioAdapter.Servic
         @Override
         public void onClick(View v) {
             switch (v.getId()){
-                case R.id.btnAguardarMascota:
-                    actionClick.myClick(Constantes.ACCION_GUARDAR_MASCOTA, listaServicios.get(getLayoutPosition()),getLayoutPosition());
+                case R.id.btnAguardarServicio:
+                    actionClick.myClick(Constantes.ACCION_ASIGNAR_SERVICIO, listaServicios.get(getLayoutPosition()),getLayoutPosition());
                     break;
             }
         }

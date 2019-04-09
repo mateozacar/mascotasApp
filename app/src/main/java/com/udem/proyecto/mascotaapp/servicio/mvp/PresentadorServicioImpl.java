@@ -1,6 +1,7 @@
 package com.udem.proyecto.mascotaapp.servicio.mvp;
 
 import com.udem.proyecto.mascotaapp.GenericRepository;
+import com.udem.proyecto.mascotaapp.modelos.Mascota;
 import com.udem.proyecto.mascotaapp.modelos.Servicio;
 
 import java.util.List;
@@ -29,6 +30,22 @@ public class PresentadorServicioImpl implements ContratoServicio.PresentadorServ
             @Override
             public void onRequestFailure(String error) {
 
+            }
+        });
+    }
+
+    @Override
+    public void listarNombreMascotasParaAsignarAlServicio() {
+        vistaServicio.mostrarProgreso();
+        repositorioServicio.listarMascotasParaAsignarAServicio(new GenericRepository<List<Mascota>>() {
+            @Override
+            public void onRequestSuccess(List<Mascota> listaMascotas) {
+                vistaServicio.listarMascotasParaAsignarAlServicio(listaMascotas);
+                vistaServicio.ocultarProgreso();
+            }
+
+            @Override
+            public void onRequestFailure(String error) {
             }
         });
     }
